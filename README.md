@@ -1,18 +1,31 @@
-# Psychometric Researcher — GitHub Pages
+# Luis Palao Loayza — GitHub Pages
 
-Plantilla web académica estática para un investigador en psicometría, psicología cuantitativa y ciencia de datos.
+Versión completa y lista para publicar del sitio académico.
 
-## Publicar en GitHub Pages
+## Incluye
 
-1. Crea un repositorio llamado `TUUSUARIO.github.io`.
-2. Copia estos archivos en la raíz del repositorio.
-3. Sustituye el nombre, afiliación, enlaces, publicaciones y correo en `index.html`.
-4. Añade tu CV como `assets/cv.pdf`.
-5. En GitHub: **Settings → Pages → Deploy from a branch → main → /(root)**.
-6. Tu web quedará disponible en `https://TUUSUARIO.github.io/`.
+- Diseño basado en la estética del CV: blanco, negro y grises.
+- Fotografía de perfil extraída del CV.
+- CV PDF integrado.
+- Secciones de investigación, publicaciones, docencia, formación y experiencia.
+- Animación CSS/SVG conceptual de investigación cuantitativa:
+  SAMPLE → DATA → MODEL → INFERENCE.
+- Responsive para escritorio y móvil.
+- Sin necesidad de frameworks o compilación.
 
-## Personalización rápida
+## Publicar
 
-- Colores y tipografías: `style.css`.
-- Contenido: `index.html`.
-- Menú móvil: `script.js`.
+Sube **el contenido de esta carpeta** al repositorio:
+
+`TUUSUARIO.github.io`
+
+y activa GitHub Pages desde:
+
+`Settings → Pages → Deploy from a branch → main → / (root)`
+
+No necesitas ejecutar `patch`: esta versión ya contiene todos los cambios.
+
+
+## Idiomas
+
+La web permite cambiar entre Español, English, Français, Deutsch y Português desde el selector de idioma. El contenido se traduce en el navegador mediante JavaScript. El único documento descargable/visible como CV es `assets/cv.pdf`.

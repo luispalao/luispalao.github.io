@@ -1,138 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sitio académico de Luis Palao Loayza, investigador en psicometría, metodología de las ciencias del comportamiento y psicología cuantitativa.">
-  <title>Luis Palao Loayza | Psychometrics & Quantitative Psychology</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Luis Palao-Loayza — investigador en psicometría, metodología, ciencia de datos y psicología cuantitativa.">
+  <title>Luis Palao-Loayza | Psychometrics & Quantitative Research</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#top">LP<span>.</span></a>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#software">Software</a>
-        <a href="#cv">CV</a>
-        <a href="#contact" class="nav-contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+<header class="site-header">
+  <a class="brand" href="#top">LPL<span>.</span></a>
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+  <nav>
+    <a href="#about"><span data-i18n="nav.about">Sobre mí</span></a>
+    <a href="#research"><span data-i18n="nav.research">Investigación</span></a>
+    <a href="#publications"><span data-i18n="nav.publications">Publicaciones</span></a>
+    <a href="#teaching"><span data-i18n="nav.teaching">Docencia</span></a>
+    <a href="#education"><span data-i18n="nav.education">Formación</span></a>
+    <a href="#contact"><span data-i18n="nav.contact">Contacto</span></a>
+  
+<div class="language-switcher" aria-label="Language selector">
+  <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
+    <span class="lang-current">ES</span> ▾
+  </button>
+  <div class="lang-menu" role="listbox">
+    <button type="button" data-lang="es" role="option">Español</button>
+    <button type="button" data-lang="en" role="option">English</button>
+    <button type="button" data-lang="fr" role="option">Français</button>
+    <button type="button" data-lang="de" role="option">Deutsch</button>
+    <button type="button" data-lang="pt" role="option">Português</button>
+  </div>
+</nav>
+</header>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">PSYCHOMETRICS · QUANTITATIVE PSYCHOLOGY · DATA SCIENCE</p>
-        <h1>Luis Palao<br><em>Loayza</em></h1>
-        <p class="hero-text">Investigador y docente interesado en la medición psicológica, la psicología cuantitativa y el desarrollo de métodos rigurosos para estudiar el comportamiento humano.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#research">Explore my research</a>
-          <a class="button secondary" href="#cv">View CV ↗</a>
-        </div>
-        <div class="metrics">
-          <div><strong>05+</strong><span>Indexed papers</span></div>
-          <div><strong>06</strong><span>Research lines</span></div>
-          <div><strong>10+</strong><span>Quantitative methods</span></div>
-        </div>
-      </div>
-      <aside class="profile-card">
-        <div class="profile-photo">LP</div>
-        <h2>Luis Palao Loayza</h2>
-        <p>Psychometrician · Quantitative Researcher · Lecturer</p>
-        <div class="affiliation">Universidad Complutense de Madrid<br>Madrid, Spain</div>
-        <div class="socials">
-          <a href="#">Google Scholar</a>
-          <a href="#">ORCID</a>
-          <a href="#">GitHub</a>
-          <a href="#">ResearchGate</a>
-        </div>
-      </aside>
-    </section>
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow"><span data-i18n="hero.eyebrow">PSICOMETRÍA · METODOLOGÍA · CIENCIA DE DATOS</span></p>
+    <h1>Luis Palao<br><em><em data-i18n="hero.surname">Loayza</em></em></h1>
+    <p class="lead"><span data-i18n="hero.lead">Investigador en Ciencias del Comportamiento y docente universitario, con interés en psicometría, metodología de la investigación, análisis de datos y ciencia de datos aplicada a la Psicología.</span></p>
+    <div class="actions">
+      <a class="button primary" href="#research"><span data-i18n="hero.researchButton">Explorar investigación</span></a>
+      <a class="button secondary" href="assets/cv.pdf" target="_blank"><span data-i18n="hero.cvButton">Ver CV</span></a>
+    </div>
+    <div class="quant-animation" aria-label="Flujo de investigación cuantitativa">
+  <div class="qa-title">QUANTITATIVE RESEARCH · FROM DATA TO INFERENCE</div>
+  <div class="qa-flow">
+    <div class="qa-particle"></div>
+    <div class="qa-node"><div class="dot"></div>SAMPLE</div>
+    <div class="qa-node"><div class="dot"></div>DATA</div>
+    <div class="qa-node"><div class="dot"></div>MODEL</div>
+    <div class="qa-node"><div class="dot"></div>INFERENCE</div>
+  </div>
+  <div class="qa-symbols"><span>N</span><span>X</span><span>M</span><span>β · θ</span></div>
+</div>
+<div class="quick-meta">
+      <span><span data-i18n="hero.location">Madrid, España</span></span>
+      <span>•</span>
+      <span><span data-i18n="hero.ucm">Universidad Complutense de Madrid</span></span>
+    </div>
+  </div>
+  <div class="hero-photo-wrap">
+    <div class="photo-ring"></div>
+    <img class="hero-photo" src="assets/profile.png" alt="Luis Palao-Loayza">
+    <div class="photo-caption"><span data-i18n="hero.photoCaption">Psychometrics<br>&amp; Quantitative Research</span></div>
+  </div>
+</section>
 
-    <section id="about" class="section light">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">01 — ABOUT</p>
-          <h2>Measurement is not just about numbers.</h2>
-        </div>
-        <div class="section-text">
-          <p>Mi trabajo se centra en la psicometría, el diseño de investigación y la aplicación de métodos cuantitativos a las ciencias del comportamiento y de la salud. Me interesa especialmente cómo construir, evaluar y validar instrumentos de medición psicológica.</p>
-          <p>Combino teoría clásica de los tests y teoría de respuesta al ítem con CFA, EFA, EGA, análisis de redes, modelos bayesianos y ciencia de datos para obtener mediciones válidas, fiables e interpretables.</p>
-          <div class="tags"><span>Psychometrics</span><span>IRT</span><span>CFA / SEM</span><span>EFA / EGA</span><span>Bayesian Methods</span><span>Machine Learning</span></div>
-        </div>
-      </div>
-    </section>
+<section id="about" class="section intro">
+  <div class="section-label"><span data-i18n="about.label">01 / SOBRE MÍ</span></div>
+  <div class="two-col">
+    <div>
+      <h2><span data-i18n="about.heading">Medir mejor para<br><span>investigar mejor.</span></span></h2>
+    </div>
+    <div>
+      <p><span data-i18n="about.p1">Profesional interesado en la investigación en Ciencias del Comportamiento, Ciencia de los Datos y Neurociencias Cognitiva, con experiencia en docencia y capacitación universitaria y en la colaboración de proyectos y grupos de investigación.</span></p>
+      <p><span data-i18n="about.p2">Mi formación combina Psicología, investigación en Ciencias del Comportamiento, metodología y actualmente Ciencia de Datos y Machine Learning. Mi trabajo se orienta especialmente al desarrollo y evaluación de instrumentos, análisis psicométricos y aplicación de métodos cuantitativos a problemas de investigación psicológica.</span></p>
+    </div>
+  </div>
+</section>
 
-    <section id="research" class="section">
-      <div class="container">
-        <p class="section-label">02 — RESEARCH</p>
-        <div class="section-heading"><h2>Research interests</h2><p>Questions I am currently interested in.</p></div>
-        <div class="research-grid">
-          <article><span>01</span><h3>Psychometrics & Measurement</h3><p>Reliability, validity, measurement invariance, latent variable models and development and validation of psychological instruments.</p></article>
-          <article><span>02</span><h3>Item Response Theory</h3><p>1PL, 2PL, 3PL, ordinal models, item information and modern test theory.</p></article>
-          <article><span>03</span><h3>Network Psychometrics</h3><p>Exploratory Graph Analysis, psychological networks and alternative approaches to dimensionality and construct structure.</p></article>
-          <article><span>04</span><h3>Bayesian Methods</h3><p>Bayesian CFA, Bayesian network analysis, probabilistic inference and explicit treatment of uncertainty.</p></article>
-          <article><span>05</span><h3>Data Science & ML</h3><p>Machine learning and computational methods applied to psychological measurement and behavioral data.</p></article>
-          <article><span>06</span><h3>Research Methodology</h3><p>Research design, quantitative methodology, reproducibility and rigorous empirical research in psychology.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="research" class="section dark">
+  <div class="section-label"><span data-i18n="research.label">02 / INVESTIGACIÓN</span></div>
+  <div class="section-heading">
+    <h2><span data-i18n="research.heading">Líneas de investigación</span></h2>
+    <p><span data-i18n="research.subheading">Un enfoque cuantitativo para estudiar, medir y modelizar fenómenos psicológicos.</span></p>
+  </div>
+  <div class="research-grid">
+    <article class="research-card featured">
+      <span class="number">01</span>
+      <h3><span data-i18n="research.r1.title">Psicometría</span></h3>
+      <p><span data-i18n="research.r1.text">Evaluación de propiedades psicométricas, construcción y validación de instrumentos y análisis de medición psicológica.</span></p>
+      <div class="tags"><span>CFA</span><span>EFA</span><span>IRT</span><span>Invarianza</span></div>
+    </article>
+    <article class="research-card">
+      <span class="number">02</span>
+      <h3><span data-i18n="research.r2.title">Metodología</span></h3>
+      <p><span data-i18n="research.r2.text">Diseño de investigación, análisis cuantitativo y aplicación rigurosa de métodos estadísticos a las Ciencias del Comportamiento.</span></p>
+      <div class="tags"><span>Métodos cuantitativos</span><span>Validación</span></div>
+    </article>
+    <article class="research-card">
+      <span class="number">03</span>
+      <h3><span data-i18n="research.r3.title">Ciencia de datos</span></h3>
+      <p><span data-i18n="nav.education">Formación</span> especializada en Ciencia de Datos y Machine Learning para ampliar las herramientas analíticas en investigación psicológica.</p>
+      <div class="tags"><span>Python</span><span>Machine Learning</span><span>R</span></div>
+    </article>
+    <article class="research-card">
+      <span class="number">04</span>
+      <h3><span data-i18n="research.r4.title">Análisis de redes y Bayes</span></h3>
+      <p><span data-i18n="research.r4.text">Aplicación de análisis de redes psicológicas y modelos bayesianos al estudio de síntomas y constructos relacionados.</span></p>
+      <div class="tags"><span>Network Analysis</span><span>Bayesian</span></div>
+    </article>
+  </div>
+</section>
 
-    <section id="publications" class="section dark">
-      <div class="container">
-        <p class="section-label">03 — PUBLICATIONS</p>
-        <div class="section-heading"><h2>Selected publications</h2><a href="#">View all publications ↗</a></div>
-        <div class="publication-list">
-          <article class="publication"><div class="pub-year">2026</div><div><h3>Psychometric research and quantitative methods</h3><p>Luis Palao Loayza and collaborators. Current work in psychological measurement and quantitative methodology.</p><div class="pub-links"><a href="#">DOI ↗</a><a href="#">PDF ↗</a><a href="#">Code ↗</a></div></div></article>
-          <article class="publication"><div class="pub-year">2025</div><div><h3>Bayesian network analysis of psychological constructs</h3><p>Luis Palao Loayza and collaborators. <em>Trends in Psychology.</em></p><div class="pub-links"><a href="#">DOI ↗</a><a href="#">Repository ↗</a></div></div></article>
-          <article class="publication"><div class="pub-year">2025</div><div><h3>Cross-cultural validation of the Jenkins Sleep Scale</h3><p>Luis Palao Loayza and collaborators. <em>Journal of Health Psychology.</em></p><div class="pub-links"><a href="#">DOI ↗</a><a href="#">Data ↗</a><a href="#">Code ↗</a></div></div></article>
-        </div>
-      </div>
-    </section>
+<section id="publications" class="section">
+  <div class="section-label"><span data-i18n="pub.label">03 / PUBLICACIONES</span></div>
+  <div class="section-heading">
+    <h2><span data-i18n="nav.research">Investigación</span> publicada</h2>
+    <p><span data-i18n="pub.subheading">Una selección de trabajos documentados en el CV.</span></p>
+  </div>
+  <div class="publication-list">
+    <article class="publication">
+      <span class="year">2026</span>
+      <div><h3>Mindfulness in Latin America: Psychometric Insights from the Mindful Attention Awareness Scale (MAAS-5) Across Four Countries.</h3><p><strong>European Journal of Mental Health</strong> · Q3</p></div>
+    </article>
+    <article class="publication">
+      <span class="year">2025</span>
+      <div><h3>Network analysis of sleep quality symptoms in individuals from four Spanish-speaking countries in Latin America and Europe.</h3><p><strong>Suma Psicológica</strong> · Q3</p></div>
+    </article>
+    <article class="publication">
+      <span class="year">2024</span>
+      <div><h3>Cross-Cultural Validation of the Jenkins Sleep Scale (JSS-4) in Spanish-Speaking Countries.</h3><p><strong>Journal of Health Psychology</strong> · Q2 · Palao-<em data-i18n="hero.surname">Loayza</em> et al.</p></div>
+    </article>
+    <article class="publication">
+      <span class="year">2024</span>
+      <div><h3>A Bayesian network analysis of sleep quality, anxiety, and depression symptoms in Peruvian Adults.</h3><p><strong>Ansiedad y Estrés</strong> · Q3</p></div>
+    </article>
+    <article class="publication">
+      <span class="year">2024</span>
+      <div><h3>Mapping of the network connection between sleep quality symptoms, depression, generalized anxiety, and burnout in the general population of Peru and El Salvador.</h3><p><strong>Psicologia: Reflexão e Crítica</strong> · Q2</p></div>
+    </article>
+  </div>
+</section>
 
-    <section id="software" class="section light">
-      <div class="container">
-        <p class="section-label">04 — SOFTWARE & METHODS</p>
-        <div class="section-heading"><h2>Tools I use</h2><p>Reproducible workflows for quantitative research.</p></div>
-        <div class="tools-grid">
-          <div class="tool"><b>R</b><span>lavaan · psych · mirt · semTools · EGAnet · qgraph</span></div>
-          <div class="tool"><b>Python</b><span>pandas · scikit-learn · PyMC · NumPy · ML</span></div>
-          <div class="tool"><b>Bayesian</b><span>Bayesian CFA · MCMC · network analysis · probabilistic modeling</span></div>
-          <div class="tool"><b>Open Science</b><span>GitHub · OSF · reproducible quantitative research</span></div>
-        </div>
-        <div class="code-card"><div class="code-top"><span>research_workflow.R</span><span>● ● ●</span></div><pre><code># Psychometric workflow
-library(lavaan)
-library(semTools)
+<section class="section alt">
+  <div class="section-label"><span data-i18n="projects.label">04 / PROYECTOS Y TFM</span></div>
+  <div class="project-grid">
+    <article><span>TFM</span><h3>Psychometric properties of the Spanish adaptation of the Expectations Regarding Ageing Scale (ERA-12-E).</h3><p>Universidad de Huelva · Máster de <span data-i18n="nav.research">Investigación</span> e Intervención Psicosocial · RStudio</p></article>
+    <article><span>TFM</span><h3>Design and psychometric properties of the Daytime Fatigue Scale (FD-5).</h3><p>Universidad de Almería y Universidad de Huelva · Máster en <span data-i18n="nav.research">Investigación</span> en Ciencias del Comportamiento · RStudio</p></article>
+    <article><span>PROYECTO</span><h3>Validación transcultural de la Escala de Estereotipos Negativos hacia la Vejez (CENVE).</h3><p>España, Perú, El Salvador y Honduras · Protocolo de investigación</p></article>
+  </div>
+</section>
 
-model &lt;- 'Factor =~ item1 + item2 + item3 + item4'
-fit &lt;- cfa(model, data = data, estimator = "WLSMV")
-summary(fit, fit.measures = TRUE, standardized = TRUE)</code></pre></div>
-      </div>
-    </section>
+<section id="teaching" class="section">
+  <div class="section-label"><span data-i18n="teaching.label">05 / DOCENCIA</span></div>
+  <div class="timeline">
+    <article>
+      <div class="date">2025 — ACT.</div>
+      <div><h3>Universidad Internacional de Valencia (VIU)</h3><p class="role">Profesor Universitario · Grado y Máster en Psicología</p><p><span data-i18n="research.r1.title">Psicometría</span> · Psicología del Lenguaje · Pensamiento y Lenguaje · Prácticas Académicas Externas · TFM de Psicología General Sanitaria · TFM de Neuropsicología Clínica.</p></div>
+    </article>
+    <article>
+      <div class="date">2025 — ACT.</div>
+      <div><h3>Universidad Internacional de La Rioja (UNIR)</h3><p class="role">Profesor Universitario · Grado y Máster en Psicología</p><p>Trabajo Fin de Máster · Prácticas Académicas Externas.</p></div>
+    </article>
+    <article>
+      <div class="date">2025 — 2026</div>
+      <div><h3>Universidad Villanueva · Madrid</h3><p class="role">Profesor Universitario · Grado en Psicología</p><p>Estadística Aplicada a la Psicología I · Análisis de Datos en Psicología: Métodos Cuantitativos y Cualitativos · Psicología del Pensamiento y del Lenguaje · Dirección de TFG · Tutorías de prácticas · Tribunal de TFG.</p></div>
+    </article>
+    <article>
+      <div class="date">2025 — 2026</div>
+      <div><h3>Universidad Tecnológica del Perú (UTP)</h3><p class="role">Profesor Universitario · Asesoría de TFG</p><p><span data-i18n="research.r2.title">Metodología</span> de la investigación · Análisis de datos (SPSS y RStudio) · Supervisión y orientación de TFG · Tribunales de sustentación.</p></div>
+    </article>
+  </div>
+</section>
 
-    <section id="cv" class="section cv-section">
-      <div class="container cv-box">
-        <div><p class="section-label">05 — CURRICULUM VITAE</p><h2>Academic background & experience</h2><p>Master in Methodology of Behavioral and Health Sciences at Universidad Complutense de Madrid. Background in psychology, psychosocial research, behavioral sciences and quantitative methods, with teaching and research experience.</p></div>
-        <a class="button primary" href="assets/cv.pdf">Download CV PDF ↗</a>
-      </div>
-    </section>
+<section id="education" class="section dark">
+  <div class="section-label"><span data-i18n="education.label">06 / FORMACIÓN</span></div>
+  <div class="education-list">
+    <article><span>2025 — ACT.</span><h3>Máster Oficial en <span data-i18n="research.r2.title">Metodología</span> de las Ciencias del Comportamiento y la Salud</h3><p><span data-i18n="hero.ucm">Universidad Complutense de Madrid</span> · Itinerario en Ciencia de Datos y Machine Learning</p></article>
+    <article><span>2023 — 2024</span><h3>Máster Oficial en <span data-i18n="nav.research">Investigación</span> en Ciencias del Comportamiento</h3><p>Universidad de Almería y Universidad de Huelva · Especialización en <span data-i18n="nav.research">Investigación</span> en Neurociencia Cognitiva y Neuropsicología</p></article>
+    <article><span>2022 — 2023</span><h3>Máster Oficial en <span data-i18n="nav.research">Investigación</span> e Intervención Psicosocial</h3><p>Universidad de Huelva</p></article>
+    <article><span>2023 — 2024</span><h3>Curso Universitario en Técnicas de Neuroimagen</h3><p>Universitat Oberta de Catalunya</p></article>
+    <article><span>2013 — 2020</span><h3>Grado en Psicología</h3><p>Universidad Autónoma del Perú</p></article>
+  </div>
+</section>
 
-    <section id="contact" class="section light contact-section">
-      <div class="container two-col">
-        <div><p class="section-label">06 — CONTACT</p><h2>Let's talk about research.</h2></div>
-        <div class="section-text"><p>For research collaborations, methodological questions, academic projects or data-analysis work, feel free to get in touch.</p><a class="email" href="mailto:your.email@example.com">your.email@example.com ↗</a><div class="contact-links"><a href="#">GitHub</a><a href="#">ORCID</a><a href="#">Google Scholar</a><a href="#">LinkedIn</a></div></div>
-      </div>
-    </section>
-  </main>
+<section class="section skills">
+  <div class="section-label"><span data-i18n="skills.label">07 / HERRAMIENTAS</span></div>
+  <div class="skills-layout">
+    <div><h2><span data-i18n="skills.heading">Software de<br>investigación</span></h2></div>
+    <div class="skill-cloud">
+      <span>RStudio</span><span>R</span><span>Python</span><span>SPSS</span><span>PsychoPy</span>
+      <span><span data-i18n="research.r1.title">Psicometría</span></span><span>CFA</span><span>EFA</span><span>IRT</span><span>Network Analysis</span>
+      <span>Bayesian Analysis</span><span>Machine Learning</span>
+    </div>
+  </div>
+</section>
 
-  <footer><div class="container footer"><span>© 2026 Luis Palao Loayza</span><span>Psychometrics · Quantitative Psychology · Data Science</span></div></footer>
-  <script src="script.js"></script>
+<section class="section alt">
+  <div class="section-label"><span data-i18n="experience.label">08 / EXPERIENCIA EN INVESTIGACIÓN</span></div>
+  <div class="experience-grid">
+    <article><h3>Universidad de Huelva</h3><p class="role">Colaborador Honorario de <span data-i18n="nav.research">Investigación</span> · 2023 — 2025</p><p>Redacción de artículos científicos, búsqueda bibliográfica, recogida de datos, análisis de datos y psicométricos y comunicación en foros científicos.</p></article>
+    <article><h3>Instituto Psicológico Soli Deo</h3><p class="role">Asistente de <span data-i18n="nav.research">Investigación</span> · 2019 — 2023</p><p>Diseño de proyectos de investigación, búsqueda bibliográfica, revisión de diseños metodológicos y análisis de datos y psicométricos.</p></article>
+    <article><h3>Asociación Nacional de Psicopedagogos del Perú</h3><p class="role">Asistente de <span data-i18n="nav.research">Investigación</span> · 2021 — 2023</p><p><span data-i18n="research.r2.title">Metodología</span> y análisis de datos en proyectos de investigación, docencia y capacitación universitaria y redacción académica.</p></article>
+    <article><h3>Instituto Psicológico de Desarrollo Integral Soli Deo</h3><p class="role">Coordinador Académico · 2020 — 2023</p><p>Planificación y coordinación de proyectos de investigación, docencia en metodología y análisis de datos y coordinación académica.</p></article>
+  </div>
+</section>
+
+<section class="section recognition">
+  <div class="section-label"><span data-i18n="recognition.label">09 / RECONOCIMIENTOS</span></div>
+  <div class="recognition-box">
+    <div class="big-mark">RENACYT</div>
+    <div><h2>Docente Investigador</h2><p>Acreditación como Docente Universitario Investigador (Perú), registrada en el Registro Nacional Científico, Tecnológico y de Innovación Tecnológica (RENACYT).</p></div>
+  </div>
+</section>
+
+<section class="section participation">
+  <div class="section-label"><span data-i18n="participation.label">10 / PARTICIPACIÓN ACADÉMICA</span></div>
+  <div class="participation-grid">
+    <article><b>2026</b><h3>XV Seminario de la Cátedra UAM-IIC</h3><p>Modelos y Aplicaciones Psicométricos, Inteligencia Artificial y Modelos del Lenguaje en Evaluación Psicológica.</p><small>Universidad Autónoma de Madrid · Oyente</small></article>
+    <article><b>2025</b><h3>XVI Congreso Internacional de Psicología</h3><p>Intervenciones Psicológicas en el Contexto Actual.</p><small>Universidad Autónoma del Perú · Ponente</small></article>
+    <article><b>2024</b><h3>XLI Congreso Iberoamericano de <span data-i18n="nav.research">Investigación</span></h3><p>Gobernanza Universitaria.</p><small>Universidad Nacional Mayor de San Marcos · Ponente</small></article>
+    <article><b>2023</b><h3>XVII Congreso Internacional Gallego-Portugués de Psicopedagogía</h3><small>Universidade da Coruña y Universidade do Minho · Ponente</small></article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-inner">
+    <div>
+      <p class="eyebrow"><span data-i18n="contact.label">CONTACTO</span></p>
+      <h2><span data-i18n="contact.heading">¿Hablamos de<br><em style="color:white;font-weight:bold;">investigación?</em></span></h2>
+    </div>
+    <div class="contact-details">
+      <a href="mailto:lpalao0914@gmail.com">lpalao0914@gmail.com</a>
+      <span><span data-i18n="hero.location">Madrid, España</span></span>
+      <a href="assets/cv.pdf" target="_blank"><span data-i18n="contact.cv">Curriculum Vitae →</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Luis Palao <em data-i18n="hero.surname">Loayza</em></span>
+  <span>Psychometrics · Quantitative Research · Data Science</span>
+</footer>
+
+<script>
+const translations = {
+  es: {
+    "nav.about":"Sobre mí","nav.research":"Investigación","nav.publications":"Publicaciones","nav.teaching":"Docencia","nav.education":"Formación","nav.contact":"Contacto",
+    "hero.eyebrow":"PSICOMETRÍA · METODOLOGÍA · CIENCIA DE DATOS","hero.surname":"Loayza","hero.lead":"Investigador en Ciencias del Comportamiento y docente universitario, con interés en psicometría, metodología de la investigación, análisis de datos y ciencia de datos aplicada a la Psicología.","hero.researchButton":"Explorar investigación","hero.cvButton":"Ver CV","hero.location":"Madrid, España","hero.ucm":"Universidad Complutense de Madrid","hero.photoCaption":"Psychometrics<br>&amp; Quantitative Research",
+    "about.label":"01 / SOBRE MÍ","about.heading":"Medir mejor para<br><span>investigar mejor.</span>","about.p1":"Profesional interesado en la investigación en Ciencias del Comportamiento, Ciencia de los Datos y Neurociencias Cognitiva, con experiencia en docencia y capacitación universitaria y en la colaboración de proyectos y grupos de investigación.","about.p2":"Mi formación combina Psicología, investigación en Ciencias del Comportamiento, metodología y actualmente Ciencia de Datos y Machine Learning. Mi trabajo se orienta especialmente al desarrollo y evaluación de instrumentos, análisis psicométricos y aplicación de métodos cuantitativos a problemas de investigación psicológica.",
+    "research.label":"02 / INVESTIGACIÓN","research.heading":"Líneas de investigación","research.subheading":"Un enfoque cuantitativo para estudiar, medir y modelizar fenómenos psicológicos.","research.r1.title":"Psicometría","research.r1.text":"Evaluación de propiedades psicométricas, construcción y validación de instrumentos y análisis de medición psicológica.","research.r2.title":"Metodología","research.r2.text":"Diseño de investigación, análisis cuantitativo y aplicación rigurosa de métodos estadísticos a las Ciencias del Comportamiento.","research.r3.title":"Ciencia de datos","research.r3.text":"Formación especializada en Ciencia de Datos y Machine Learning para ampliar las herramientas analíticas en investigación psicológica.","research.r4.title":"Análisis de redes y Bayes","research.r4.text":"Aplicación de análisis de redes psicológicas y modelos bayesianos al estudio de síntomas y constructos relacionados.",
+    "pub.label":"03 / PUBLICACIONES","pub.heading":"Investigación publicada","pub.subheading":"Una selección de trabajos documentados en el CV.",
+    "projects.label":"04 / PROYECTOS Y TFM","teaching.label":"05 / DOCENCIA","education.label":"06 / FORMACIÓN","skills.label":"07 / HERRAMIENTAS","skills.heading":"Software de<br>investigación","experience.label":"08 / EXPERIENCIA EN INVESTIGACIÓN","recognition.label":"09 / RECONOCIMIENTOS","participation.label":"10 / PARTICIPACIÓN ACADÉMICA",
+    "contact.label":"CONTACTO","contact.heading":"¿Hablamos de<br><em>investigación?</em>","contact.cv":"Curriculum Vitae →"
+  },
+  en: {
+    "nav.about":"About","nav.research":"Research","nav.publications":"Publications","nav.teaching":"Teaching","nav.education":"Education","nav.contact":"Contact",
+    "hero.eyebrow":"PSYCHOMETRICS · METHODOLOGY · DATA SCIENCE","hero.surname":"Loayza","hero.lead":"Behavioral science researcher and university lecturer interested in psychometrics, research methodology, data analysis, and data science applied to Psychology.","hero.researchButton":"Explore research","hero.cvButton":"View CV","hero.location":"Madrid, Spain","hero.ucm":"Complutense University of Madrid","hero.photoCaption":"Psychometrics<br>&amp; Quantitative Research",
+    "about.label":"01 / ABOUT","about.heading":"Measure better to<br><span>research better.</span>","about.p1":"Professional interested in research in Behavioral Sciences, Data Science, and Cognitive Neuroscience, with experience in university teaching and training and in collaborating on research projects and groups.","about.p2":"My training combines Psychology, behavioral science research, methodology, and current specialization in Data Science and Machine Learning. My work focuses especially on instrument development and evaluation, psychometric analysis, and quantitative methods in psychological research.",
+    "research.label":"02 / RESEARCH","research.heading":"Research areas","research.subheading":"A quantitative approach to studying, measuring, and modeling psychological phenomena.","research.r1.title":"Psychometrics","research.r1.text":"Assessment of psychometric properties, instrument construction and validation, and psychological measurement.","research.r2.title":"Methodology","research.r2.text":"Research design, quantitative analysis, and rigorous application of statistical methods to behavioral sciences.","research.r3.title":"Data science","research.r3.text":"Specialized training in Data Science and Machine Learning to expand analytical tools for psychological research.","research.r4.title":"Network analysis & Bayes","research.r4.text":"Application of psychological network analysis and Bayesian models to related symptoms and constructs.",
+    "pub.label":"03 / PUBLICATIONS","pub.heading":"Published research","pub.subheading":"A selection of works documented in the CV.",
+    "projects.label":"04 / PROJECTS & THESIS","teaching.label":"05 / TEACHING","education.label":"06 / EDUCATION","skills.label":"07 / TOOLS","skills.heading":"Research<br>software","experience.label":"08 / RESEARCH EXPERIENCE","recognition.label":"09 / RECOGNITION","participation.label":"10 / ACADEMIC PARTICIPATION",
+    "contact.label":"CONTACT","contact.heading":"Let's talk about<br><em>research.</em>","contact.cv":"Curriculum Vitae →"
+  },
+  fr: {
+    "nav.about":"À propos","nav.research":"Recherche","nav.publications":"Publications","nav.teaching":"Enseignement","nav.education":"Formation","nav.contact":"Contact",
+    "hero.eyebrow":"PSYCHOMÉTRIE · MÉTHODOLOGIE · SCIENCE DES DONNÉES","hero.surname":"Loayza","hero.lead":"Chercheur en sciences du comportement et enseignant universitaire, intéressé par la psychométrie, la méthodologie de la recherche, l’analyse des données et la science des données appliquée à la psychologie.","hero.researchButton":"Explorer la recherche","hero.cvButton":"Voir le CV","hero.location":"Madrid, Espagne","hero.ucm":"Université Complutense de Madrid","hero.photoCaption":"Psychométrie<br>&amp; Recherche quantitative",
+    "about.label":"01 / À PROPOS","about.heading":"Mieux mesurer pour<br><span>mieux rechercher.</span>","about.p1":"Professionnel intéressé par la recherche en sciences du comportement, science des données et neurosciences cognitives, avec une expérience dans l’enseignement universitaire, la formation et la collaboration à des projets de recherche.","about.p2":"Ma formation associe psychologie, recherche en sciences du comportement, méthodologie et spécialisation actuelle en science des données et apprentissage automatique. Mon travail porte notamment sur le développement et l’évaluation des instruments, l’analyse psychométrique et les méthodes quantitatives.",
+    "research.label":"02 / RECHERCHE","research.heading":"Axes de recherche","research.subheading":"Une approche quantitative pour étudier, mesurer et modéliser les phénomènes psychologiques.","research.r1.title":"Psychométrie","research.r1.text":"Évaluation des propriétés psychométriques, construction et validation des instruments et mesure psychologique.","research.r2.title":"Méthodologie","research.r2.text":"Plan de recherche, analyse quantitative et application rigoureuse des méthodes statistiques aux sciences du comportement.","research.r3.title":"Science des données","research.r3.text":"Formation spécialisée en science des données et apprentissage automatique pour la recherche psychologique.","research.r4.title":"Analyse de réseaux & Bayes","research.r4.text":"Application de l’analyse des réseaux psychologiques et des modèles bayésiens.",
+    "pub.label":"03 / PUBLICATIONS","pub.heading":"Recherche publiée","pub.subheading":"Une sélection de travaux documentés dans le CV.",
+    "projects.label":"04 / PROJETS & MÉMOIRES","teaching.label":"05 / ENSEIGNEMENT","education.label":"06 / FORMATION","skills.label":"07 / OUTILS","skills.heading":"Logiciels de<br>recherche","experience.label":"08 / EXPÉRIENCE DE RECHERCHE","recognition.label":"09 / DISTINCTIONS","participation.label":"10 / PARTICIPATION ACADÉMIQUE",
+    "contact.label":"CONTACT","contact.heading":"Parlons de<br><em>recherche.</em>","contact.cv":"Curriculum Vitae →"
+  },
+  de: {
+    "nav.about":"Über mich","nav.research":"Forschung","nav.publications":"Publikationen","nav.teaching":"Lehre","nav.education":"Ausbildung","nav.contact":"Kontakt",
+    "hero.eyebrow":"PSYCHOMETRIE · METHODIK · DATA SCIENCE","hero.surname":"Loayza","hero.lead":"Forscher im Bereich der Verhaltenswissenschaften und Hochschullehrer mit Interesse an Psychometrie, Forschungsmethodik, Datenanalyse und Data Science in der Psychologie.","hero.researchButton":"Forschung ansehen","hero.cvButton":"CV ansehen","hero.location":"Madrid, Spanien","hero.ucm":"Complutense-Universität Madrid","hero.photoCaption":"Psychometrie<br>&amp; Quantitative Forschung",
+    "about.label":"01 / ÜBER MICH","about.heading":"Besser messen, um<br><span>besser zu forschen.</span>","about.p1":"Fachlich interessiert an Forschung in Verhaltenswissenschaften, Data Science und kognitiven Neurowissenschaften, mit Erfahrung in universitärer Lehre, Weiterbildung und Forschungsprojekten.","about.p2":"Meine Ausbildung verbindet Psychologie, Verhaltenswissenschaften, Methodik sowie eine aktuelle Spezialisierung in Data Science und Machine Learning. Mein Schwerpunkt liegt auf Instrumentenentwicklung, psychometrischer Analyse und quantitativen Methoden.",
+    "research.label":"02 / FORSCHUNG","research.heading":"Forschungsbereiche","research.subheading":"Ein quantitativer Ansatz zur Untersuchung, Messung und Modellierung psychologischer Phänomene.","research.r1.title":"Psychometrie","research.r1.text":"Bewertung psychometrischer Eigenschaften, Konstruktion und Validierung von Instrumenten und psychologische Messung.","research.r2.title":"Methodik","research.r2.text":"Forschungsdesign, quantitative Analyse und rigorose Anwendung statistischer Methoden.","research.r3.title":"Data Science","research.r3.text":"Spezialisierte Ausbildung in Data Science und Machine Learning für die psychologische Forschung.","research.r4.title":"Netzwerkanalyse & Bayes","research.r4.text":"Anwendung psychologischer Netzwerkanalysen und Bayes'scher Modelle.",
+    "pub.label":"03 / PUBLIKATIONEN","pub.heading":"Publizierte Forschung","pub.subheading":"Eine Auswahl der im CV dokumentierten Arbeiten.",
+    "projects.label":"04 / PROJEKTE & ABSCHLUSSARBEITEN","teaching.label":"05 / LEHRE","education.label":"06 / AUSBILDUNG","skills.label":"07 / TOOLS","skills.heading":"Forschungs-<br>software","experience.label":"08 / FORSCHUNGSERFAHRUNG","recognition.label":"09 / AUSZEICHNUNGEN","participation.label":"10 / AKADEMISCHE AKTIVITÄTEN",
+    "contact.label":"KONTAKT","contact.heading":"Sprechen wir über<br><em>Forschung.</em>","contact.cv":"Lebenslauf →"
+  },
+  pt: {
+    "nav.about":"Sobre mim","nav.research":"Investigação","nav.publications":"Publicações","nav.teaching":"Docência","nav.education":"Formação","nav.contact":"Contacto",
+    "hero.eyebrow":"PSICOMETRIA · METODOLOGIA · CIÊNCIA DE DADOS","hero.surname":"Loayza","hero.lead":"Investigador em Ciências do Comportamento e docente universitário, interessado em psicometria, metodologia da investigação, análise de dados e ciência de dados aplicada à Psicologia.","hero.researchButton":"Explorar investigação","hero.cvButton":"Ver CV","hero.location":"Madrid, Espanha","hero.ucm":"Universidade Complutense de Madrid","hero.photoCaption":"Psicometria<br>&amp; Investigação quantitativa",
+    "about.label":"01 / SOBRE MIM","about.heading":"Medir melhor para<br><span>investigar melhor.</span>","about.p1":"Profissional interessado na investigação em Ciências do Comportamento, Ciência de Dados e Neurociências Cognitivas, com experiência no ensino universitário, formação e colaboração em projetos de investigação.","about.p2":"A minha formação combina Psicologia, investigação em Ciências do Comportamento, metodologia e especialização atual em Ciência de Dados e Machine Learning. O meu trabalho centra-se no desenvolvimento e avaliação de instrumentos, análise psicométrica e métodos quantitativos.",
+    "research.label":"02 / INVESTIGAÇÃO","research.heading":"Áreas de investigação","research.subheading":"Uma abordagem quantitativa para estudar, medir e modelar fenómenos psicológicos.","research.r1.title":"Psicometria","research.r1.text":"Avaliação de propriedades psicométricas, construção e validação de instrumentos e medição psicológica.","research.r2.title":"Metodologia","research.r2.text":"Desenho de investigação, análise quantitativa e aplicação rigorosa de métodos estatísticos.","research.r3.title":"Ciência de dados","research.r3.text":"Formação especializada em Ciência de Dados e Machine Learning para investigação psicológica.","research.r4.title":"Análise de redes & Bayes","research.r4.text":"Aplicação de análise de redes psicológicas e modelos bayesianos.",
+    "pub.label":"03 / PUBLICAÇÕES","pub.heading":"Investigação publicada","pub.subheading":"Uma seleção de trabalhos documentados no CV.",
+    "projects.label":"04 / PROJETOS E DISSERTAÇÕES","teaching.label":"05 / DOCÊNCIA","education.label":"06 / FORMAÇÃO","skills.label":"07 / FERRAMENTAS","skills.heading":"Software de<br>investigação","experience.label":"08 / EXPERIÊNCIA DE INVESTIGAÇÃO","recognition.label":"09 / RECONHECIMENTOS","participation.label":"10 / PARTICIPAÇÃO ACADÉMICA",
+    "contact.label":"CONTACTO","contact.heading":"Falamos sobre<br><em>investigação?</em>","contact.cv":"Curriculum Vitae →"
+  }
+};
+
+function setLanguage(lang){
+  const dict = translations[lang] || translations.es;
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  document.querySelector(".lang-current").textContent = lang.toUpperCase();
+  localStorage.setItem("preferredLanguage", lang);
+  document.title = lang === "es" ? "Luis Palao Loayza | Psychometrics & Quantitative Research" : "Luis Palao Loayza | Psychometrics & Quantitative Research";
+}
+const preferred = localStorage.getItem("preferredLanguage");
+if (preferred && translations[preferred]) setLanguage(preferred);
+document.querySelectorAll("[data-lang]").forEach(btn => btn.addEventListener("click", () => {
+  setLanguage(btn.dataset.lang);
+  document.querySelector(".lang-menu").classList.remove("open");
+  document.querySelector(".lang-button").setAttribute("aria-expanded","false");
+}));
+document.querySelector(".lang-button").addEventListener("click", () => {
+  const menu = document.querySelector(".lang-menu");
+  const open = menu.classList.toggle("open");
+  document.querySelector(".lang-button").setAttribute("aria-expanded", open);
+});
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
